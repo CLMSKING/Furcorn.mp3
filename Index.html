@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stare at the Furcorn</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #a3d5a3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Comic Sans MS', cursive;
+    }
+    #furcorn {
+      width: 300px;
+      animation: bob 2s infinite ease-in-out;
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <img id="furcorn" src="YOUR-FURCORN-IMAGE-HERE" alt="Furcorn staring into your soul">
+</body>
+</html>
